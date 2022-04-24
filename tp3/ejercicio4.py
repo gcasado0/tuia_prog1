@@ -17,12 +17,11 @@ Pantalones
  5%
  20 %
 Dado un item y la sede del local, devolver el descuento que se recibirá.
-
 '''
 
 #datos
-item = input("Ingrese el item: ") 
-sede = input("Ingrese la sede: ")
+item = input ("Ingrese el item: ") 
+sede = input ("Ingrese la sede: ")
 
 #procesamiento
 item = item.lower() #paso todo a minuscula
@@ -37,7 +36,7 @@ if item == 'zapatillas':
     elif sede == 'roldán':
         descuento =  25
     else:
-        descuento = 0
+        print ("La sede ingresada no es válida.")
 elif item == 'remeras':
     if sede == 'rosario':
         descuento = 20
@@ -46,7 +45,7 @@ elif item == 'remeras':
     elif sede == 'roldán':
         descuento =  15
     else:
-        descuento = 0    
+        print ("La sede ingresada no es válida.")  
 elif item == 'pantalones':   
     if sede == 'rosario':
         descuento = 10
@@ -55,12 +54,12 @@ elif item == 'pantalones':
     elif sede == 'roldán':
         descuento =  20
     else:
-        descuento = 0    
+        print ("La sede ingresada no es válida.")    
 else: 
-    print("El item ingresado no es válido.")
+    print ("El item ingresado no es válido.")
 
 #salida
 if (descuento > 0):
-    print("Descuento a pagar: ", descuento,"%")
+    print ("Descuento: ", descuento,"%")
 else:
-    print("Sin descuento.")
+    print ("Sin descuento.")
