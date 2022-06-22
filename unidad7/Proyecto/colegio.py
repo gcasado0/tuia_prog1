@@ -1,0 +1,2 @@
+def cole():
+    print('cole')
