@@ -1,5 +1,5 @@
 import csv
-path = '/home/gcasado0/Descargas/unr/programacion/tp/'
+path = '/home/gcasado0/proyectos/tuia_prog1/tpfinal/'
 
 with open(path + 'listings.csv', newline='') as File:
     reader = csv.reader(File, delimiter=',')
